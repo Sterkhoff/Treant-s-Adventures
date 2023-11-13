@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 094bbdb50b2814e4eb7081fc7936e505, type: 3}
+  m_Name: Apple
+  m_EditorClassIdentifier: 
+  Name: Apple
+  ItemToDraw: {fileID: 1178490731407872284, guid: 9409da9b5ab135a42b2d69689bf8a157, type: 3}
