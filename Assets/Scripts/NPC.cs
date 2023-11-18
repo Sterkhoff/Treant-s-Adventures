@@ -16,6 +16,7 @@ public class NPC : MonoBehaviour, IInteractive
         playerInventory = GameObject.Find("UIInventory").GetComponent<Inventory>();
         NPCDialogue = DialogueWindow.GetComponent<Dialogue>();
         NPCDialogue.ChangeDialogLines(DialogueTextIfQuestNotComplete);
+        gameObject.tag = "Interactive";
     }
 
     public void Interact()
