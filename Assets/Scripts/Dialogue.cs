@@ -6,10 +6,10 @@ using UnityEngine.Serialization;
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI DialogueText;
-    private string[] lines;
+    public string[] lines { get; set; }
     public float PrintingDelay;
 
-    private int lineIndex;
+    public int lineIndex { get; set; }
 
     public void StartDialogue()
     {

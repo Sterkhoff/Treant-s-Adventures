@@ -9,6 +9,7 @@ TagManager:
   - Interactive
   - Inventory
   - InvisibleWall
+  - ChoicePanel
   layers:
   - Default
   - TransparentFX
@@ -45,6 +46,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Back
+    uniqueID: 4085417873
     locked: 0
   - name: Objects
     uniqueID: 1269079959

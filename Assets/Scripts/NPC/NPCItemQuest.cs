@@ -1,7 +1,7 @@
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class NPC : MonoBehaviour, IInteractive
+public class NPCItemQuest : IInteractive
 {
     public GameObject DialogueWindow;
     public string NeededObjectName;
@@ -19,7 +19,7 @@ public class NPC : MonoBehaviour, IInteractive
         gameObject.tag = "Interactive";
     }
 
-    public void Interact()
+    public override void Interact()
     {
         if (playerInventory.ChoosenSlotNumber != null
             && !playerInventory.Items[(int)playerInventory.ChoosenSlotNumber].IsUnityNull()

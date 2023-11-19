@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PickAble : MonoBehaviour, IInteractive
+public class PickAble : IInteractive
 {
     private Inventory inventory;
     public Item Item;
@@ -9,7 +9,7 @@ public class PickAble : MonoBehaviour, IInteractive
     {
         inventory = GameObject.Find("UIInventory").GetComponent<Inventory>();
     }
-    public void Interact()
+    public override void Interact()
     {
         inventory.AddToInventory(Item);            
         Destroy(gameObject);

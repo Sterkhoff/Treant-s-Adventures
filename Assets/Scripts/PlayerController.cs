@@ -1,4 +1,5 @@
 using System;
+using TMPro;
 using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
@@ -8,7 +9,13 @@ public class PlayerController : MonoBehaviour
     public bool isFaceRight;
     public SpriteRenderer sr;
     public GameObject InteractiveButton;
-    public event Action ActionButtonPressed ;
+    private event Action ActionButtonPressed;
+    public TextMeshProUGUI InteractionName;
+
+    private void Start()
+    {
+        ActionButtonPressed += () => InteractiveButton.SetActive(false);
+    }
 
 
     private void Update()
@@ -36,6 +43,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("Interactive"))
         {
+            InteractionName.text = other.GetComponent<IInteractive>().InteractionName;
             InteractiveButton.SetActive(true);
             ActionButtonPressed += other.GetComponent<IInteractive>().Interact;
         }

@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 6770099936986118468}
   - component: {fileID: 3282270552652146667}
   - component: {fileID: 1717662070287105706}
+  - component: {fileID: 2150164812983414990}
+  - component: {fileID: 8045561255412526084}
   m_Layer: 0
   m_Name: Apple
   m_TagString: Interactive
@@ -72,9 +74,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: -200827661
-  m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingLayerID: 1269079959
+  m_SortingLayer: 1
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 4f904c62a5d3e8846bceee17703ef68d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -118,7 +120,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -1.8510127}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -129,7 +131,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 9.64, y: 10.24}
+  m_Size: {x: 9.64, y: 13.942025}
   m_EdgeRadius: 0
 --- !u!114 &1717662070287105706
 MonoBehaviour:
@@ -143,4 +145,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eabdae476865c6141a9c0342d974613b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  InteractionName: "\u041F\u043E\u0434\u043D\u044F\u0442\u044C"
   Item: {fileID: 11400000, guid: 231c3b18aeb08ee468eda02751ef7d14, type: 2}
+--- !u!114 &2150164812983414990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8589626356580298576}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b791a57e3c92f24b81e1a4b8417d2ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &8045561255412526084
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8589626356580298576}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
