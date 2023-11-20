@@ -1,12 +1,11 @@
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UI;
+
 
 public class Inventory : MonoBehaviour
 {
-    public Item[] Items;
-    public Image[] Slots;
+    public string[] Items;
     public int? ChoosenSlotNumber;
+    public InventoryUI InventoryPanel;
 
     public void Update()
     {
@@ -32,10 +31,10 @@ public class Inventory : MonoBehaviour
     {
         for (var i = 0; i < Items.Length; i++)
         {
-            if (Items[i].IsUnityNull())
+            if (Items[i] == string.Empty)
             {
-                Items[i] = itemForAdd;
-                Instantiate(itemForAdd.ItemToDraw, Slots[i].transform, false);
+                Items[i] = itemForAdd.Name;
+                InventoryPanel.AddToInventory(itemForAdd, i);
                 break;
             }
         }
@@ -43,20 +42,15 @@ public class Inventory : MonoBehaviour
 
     public void DeleteFromInventory(int itemSlotNumber)
     {
-        Destroy(Slots[itemSlotNumber].transform.GetChild(0).gameObject);
-        Items[itemSlotNumber] = null;
+        InventoryPanel.DeleteFromInventory(itemSlotNumber);
+        Items[itemSlotNumber] = string.Empty;
         if (ChoosenSlotNumber == itemSlotNumber)
             ChooseSlot(itemSlotNumber);
     }
 
     private void ChooseSlot(int slotNumber)
     {
+        InventoryPanel.ChooseSlot(slotNumber);
         ChoosenSlotNumber = ChoosenSlotNumber == slotNumber ? null : slotNumber;
-        Slots[slotNumber].color = Slots[slotNumber].color == Color.gray ? Color.white : Color.gray;
-        for (var i = 0; i < Slots.Length; i++)
-        {
-            if (i != slotNumber)
-                Slots[i].color = Color.white;
-        }
     }
 }

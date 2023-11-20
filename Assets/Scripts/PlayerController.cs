@@ -11,10 +11,12 @@ public class PlayerController : MonoBehaviour
     public GameObject InteractiveButton;
     private event Action ActionButtonPressed;
     public TextMeshProUGUI InteractionName;
+    private Inventory playerInventory;
 
     private void Start()
     {
         ActionButtonPressed += () => InteractiveButton.SetActive(false);
+        playerInventory = GetComponent<Inventory>();
     }
 
 
@@ -43,7 +45,11 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("Interactive"))
         {
-            InteractionName.text = other.GetComponent<IInteractive>().InteractionName;
+            if (playerInventory.ChoosenSlotNumber != null
+                && playerInventory.Items[(int)playerInventory.ChoosenSlotNumber] != string.Empty)
+                InteractionName.text = "Использовать";
+            else
+                InteractionName.text = other.GetComponent<IInteractive>().InteractionName;
             InteractiveButton.SetActive(true);
             ActionButtonPressed += other.GetComponent<IInteractive>().Interact;
         }

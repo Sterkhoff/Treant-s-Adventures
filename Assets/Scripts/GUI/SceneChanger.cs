@@ -5,6 +5,7 @@ public class SceneChanger : MonoBehaviour
 {
     private Animator anim;
     public int LevelToLoad;
+    public Vector3 NextScenePosition;
 
     private void Start()
     {

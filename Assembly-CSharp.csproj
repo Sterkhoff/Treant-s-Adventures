@@ -60,21 +60,21 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Objects\PlayersPhysicsIgnoreObject.cs" />
     <Compile Include="Assets\Scripts\Objects\Item.cs" />
-    <Compile Include="Assets\Scripts\Dialogue.cs" />
+    <Compile Include="Assets\Scripts\GUI\SceneChanger.cs" />
+    <Compile Include="Assets\Scripts\GUI\Dialogue.cs" />
+    <Compile Include="Assets\Scripts\GUI\LocationSwitch.cs" />
+    <Compile Include="Assets\Scripts\GUI\LocationChanger.cs" />
     <Compile Include="Assets\Scripts\Inventory\Inventory.cs" />
     <Compile Include="Assets\Scripts\IInteractive.cs" />
-    <Compile Include="Assets\Scripts\ObjectCreator.cs" />
+    <Compile Include="Assets\Scripts\NPC\PlayerFollower.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryUI.cs" />
-    <Compile Include="Assets\Scripts\Objects\PickAble.cs" />
-    <Compile Include="Assets\Scripts\FrameSwitch.cs" />
-    <Compile Include="Assets\Scripts\Fairy.cs" />
-    <Compile Include="Assets\Scripts\SceneChanger.cs" />
-    <Compile Include="Assets\Scripts\CinemachineShake.cs" />
+    <Compile Include="Assets\Scripts\Objects\ObjectCreator.cs" />
+    <Compile Include="Assets\Scripts\GUI\ChoicePanel.cs" />
     <Compile Include="Assets\Scripts\NPC\NPCMiniGame.cs" />
     <Compile Include="Assets\Scripts\NPC\NPCItemQuest.cs" />
-    <Compile Include="Assets\Scripts\ChoicePanel.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Scripts\VectorValue.cs" />
+    <Compile Include="Assets\Scripts\LocationChangerProvider.cs" />
+    <Compile Include="Assets\Scripts\GUI\CinemachineShake.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

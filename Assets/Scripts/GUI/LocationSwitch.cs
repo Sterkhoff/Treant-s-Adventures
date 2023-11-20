@@ -1,11 +1,9 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class FrameSwitch : MonoBehaviour
+public class LocationSwitch : MonoBehaviour
 {
     public GameObject activeFrame;
+    public LocationChanger LocationSwitcher;
 
     private void OnTriggerExit2D(Collider2D other)
     {
@@ -16,6 +14,9 @@ public class FrameSwitch : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
+        {
+            LocationSwitcher.PlayLocationStartAnimation();
             activeFrame.SetActive(true);
+        }
     }
 }

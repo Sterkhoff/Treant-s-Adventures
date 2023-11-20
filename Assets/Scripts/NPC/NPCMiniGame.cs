@@ -8,6 +8,7 @@ public class NPCMiniGame : IInteractive
     public string[] DialogueTextIfQuestComplete;
     public string TextForChoicePanel;
 
+    public LocationChangerProvider locChanger;
     private ChoicePanel choicePanel;
     private Dialogue NPCDialogue;
 
@@ -17,6 +18,7 @@ public class NPCMiniGame : IInteractive
         NPCDialogue = DialogueWindow.GetComponent<Dialogue>();
         NPCDialogue.ChangeDialogLines(DialogueTextIfQuestNotComplete);
         gameObject.tag = "Interactive";
+        locChanger = GetComponent<LocationChangerProvider>();
     }
 
     public override void Interact()
@@ -32,12 +34,14 @@ public class NPCMiniGame : IInteractive
 
         if (NPCDialogue.lineIndex == NPCDialogue.lines.Length - 1)
         {
+            choicePanel.FirstButton.onClick.AddListener(() => locChanger.ChangeLocation());
             choicePanel.Show(TextForChoicePanel);
         }
     }
 
     public void OnTriggerExit2D(Collider2D collision)
     {
+        choicePanel.FirstButton.onClick.RemoveListener(() => locChanger.ChangeLocation());
         DialogueWindow.SetActive(false);
         choicePanel.Hide();
     }

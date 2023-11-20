@@ -1,9 +1,19 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-[CreateAssetMenu(fileName = "ItemData", menuName = "Item")]
-public class Item : ScriptableObject
+public class Item : IInteractive
 {
     public string Name;
-    public GameObject ItemToDraw;
+    public Image ImageInInventory;
+    private Inventory inventory;
+
+    private void Start()
+    {
+        inventory = GameObject.Find("Player").GetComponent<Inventory>();
+    }
+    public override void Interact()
+    {
+        inventory.AddToInventory(gameObject.GetComponent<Item>());            
+        Destroy(gameObject);
+    }
 }

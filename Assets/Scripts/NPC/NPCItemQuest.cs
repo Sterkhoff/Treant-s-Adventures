@@ -13,7 +13,7 @@ public class NPCItemQuest : IInteractive
 
     private void Start()
     {
-        playerInventory = GameObject.Find("UIInventory").GetComponent<Inventory>();
+        playerInventory = GameObject.Find("Player").GetComponent<Inventory>();
         NPCDialogue = DialogueWindow.GetComponent<Dialogue>();
         NPCDialogue.ChangeDialogLines(DialogueTextIfQuestNotComplete);
         gameObject.tag = "Interactive";
@@ -22,8 +22,7 @@ public class NPCItemQuest : IInteractive
     public override void Interact()
     {
         if (playerInventory.ChoosenSlotNumber != null
-            && !playerInventory.Items[(int)playerInventory.ChoosenSlotNumber].IsUnityNull()
-            && playerInventory.Items[(int)playerInventory.ChoosenSlotNumber].Name == NeededObjectName)
+            && playerInventory.Items[(int)playerInventory.ChoosenSlotNumber] == NeededObjectName)
         {
             playerInventory.DeleteFromInventory((int)playerInventory.ChoosenSlotNumber);
             NPCDialogue.ChangeDialogLines(DialogueTextIfQuestComplete);

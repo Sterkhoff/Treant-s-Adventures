@@ -2,15 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ChoicePanel : MonoBehaviour
 {
     private Animator anim;
     public TextMeshProUGUI textBox;
+    public Button FirstButton;
+    public Button SecondButoon;
 
     public void Start()
     {
-        anim = GetComponent<Animator>();
+        anim = GetComponent<Animator>();       
     }
     public void Show(string text)
     {
