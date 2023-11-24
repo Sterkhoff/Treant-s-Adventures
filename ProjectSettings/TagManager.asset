@@ -10,6 +10,7 @@ TagManager:
   - Inventory
   - InvisibleWall
   - ChoicePanel
+  - Root
   layers:
   - Default
   - TransparentFX
