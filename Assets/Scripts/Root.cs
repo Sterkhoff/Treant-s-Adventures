@@ -7,11 +7,21 @@ public class Root : MonoBehaviour
 
     public void Start()
     {
-        anim = GameObject.Find("RootsMiniGameLocation").GetComponent<Animator>();
+        anim = GetComponent<Animator>();
+    }
+
+    public void Close()
+    {
+        anim.SetBool("IsActive", false);
+    }
+
+    public void Back()
+    {
+        anim.SetBool("IsActive", true);
     }
 
     public void Shake()
     {
-        anim.SetTrigger($"Root{Number}");
+        anim.SetTrigger("Shake");
     }
 }

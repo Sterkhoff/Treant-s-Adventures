@@ -4,7 +4,7 @@ public class LocationChangerProvider : MonoBehaviour
 {
     private LocationChanger LocChanger;
     public GameObject LocationToLoad;
-    public GameObject CurrentScene;
+    public GameObject CurrentLocation;
 
     private void Start()
     {
@@ -12,6 +12,6 @@ public class LocationChangerProvider : MonoBehaviour
     }
     public void ChangeLocation()
     {
-        LocChanger.FadeToLevel(CurrentScene, LocationToLoad);
+        LocChanger.FadeToLevel(CurrentLocation, LocationToLoad);
     }
 }

@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class LocationChanger : MonoBehaviour
 {
-    private GameObject LocationToLoad;
-    private GameObject CurrentLocation;
+    public GameObject LocationToLoad;
+    public GameObject CurrentLocation;
     private Animator anim;
 
     private void Start()
