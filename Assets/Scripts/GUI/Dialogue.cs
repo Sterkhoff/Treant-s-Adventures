@@ -6,13 +6,14 @@ using UnityEngine.Serialization;
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI DialogueText;
-    public string[] lines { get; set; }
+    public string[] lines;
     public float PrintingDelay;
 
-    public int lineIndex { get; set; }
+    public int lineIndex;
 
     public void StartDialogue()
     {
+        gameObject.SetActive(true);
         DialogueText.maxVisibleCharacters = 0;
         DialogueText.text = lines[0];
         lineIndex = 0;

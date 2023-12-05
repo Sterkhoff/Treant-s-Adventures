@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Objects\PlayersPhysicsIgnoreObject.cs" />
     <Compile Include="Assets\Scripts\Objects\Item.cs" />
+    <Compile Include="Assets\Scripts\LocationEnter.cs" />
     <Compile Include="Assets\Scripts\GUI\SceneChanger.cs" />
     <Compile Include="Assets\Scripts\GUI\Dialogue.cs" />
     <Compile Include="Assets\Scripts\GUI\LocationSwitch.cs" />
@@ -70,11 +71,14 @@
     <Compile Include="Assets\Scripts\NPC\PlayerFollower.cs" />
     <Compile Include="Assets\Scripts\Inventory\InventoryUI.cs" />
     <Compile Include="Assets\Scripts\Objects\ObjectCreator.cs" />
+    <Compile Include="Assets\Scripts\MiniGameHost.cs" />
     <Compile Include="Assets\Scripts\GUI\ChoicePanel.cs" />
     <Compile Include="Assets\Scripts\NPC\NPCMiniGame.cs" />
     <Compile Include="Assets\Scripts\NPC\NPCItemQuest.cs" />
+    <Compile Include="Assets\Scripts\Minigame.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\MiniGameManager.cs" />
+    <Compile Include="Assets\Scripts\NPC\NPC.cs" />
     <Compile Include="Assets\Scripts\LocationChangerProvider.cs" />
     <Compile Include="Assets\Scripts\GUI\CinemachineShake.cs" />
   </ItemGroup>

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MiniGameManager : MonoBehaviour
+public class MiniGameManager : Minigame
 {
 
     private Camera mainCamera;
@@ -46,6 +46,7 @@ public class MiniGameManager : MonoBehaviour
 
     private void EndGame()
     {
+        IsComplete = true;
         LocChanger.ChangeLocation();
     }
 }

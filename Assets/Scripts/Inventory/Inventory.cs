@@ -4,27 +4,25 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     public string[] Items;
-    public int? ChoosenSlotNumber;
     public InventoryUI InventoryPanel;
+    public string ChoosenItem;
+    private int choosenSlotNumber;
+
+    private void Start()
+    {
+        choosenSlotNumber = -1;
+    }
 
     public void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
             ChooseSlot(0);
-        }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
             ChooseSlot(1);
-        }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
             ChooseSlot(2);
-        }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
             ChooseSlot(3);
-        }
     }
 
     public void AddToInventory(Item itemForAdd)
@@ -40,17 +38,21 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void DeleteFromInventory(int itemSlotNumber)
+    public void DeleteChoosenFromInventory()
     {
-        InventoryPanel.DeleteFromInventory(itemSlotNumber);
-        Items[itemSlotNumber] = string.Empty;
-        if (ChoosenSlotNumber == itemSlotNumber)
-            ChooseSlot(itemSlotNumber);
+        if (choosenSlotNumber != -1)
+        {
+            InventoryPanel.DeleteFromInventory(choosenSlotNumber);
+            Items[choosenSlotNumber] = string.Empty;
+            choosenSlotNumber = -1;
+            ChoosenItem = string.Empty;
+        }
     }
 
     private void ChooseSlot(int slotNumber)
     {
-        InventoryPanel.ChooseSlot(slotNumber);
-        ChoosenSlotNumber = ChoosenSlotNumber == slotNumber ? null : slotNumber;
+        choosenSlotNumber = choosenSlotNumber == slotNumber ? -1 : slotNumber;
+        ChoosenItem = choosenSlotNumber == -1 ? string.Empty : Items[choosenSlotNumber];
+        InventoryPanel.ChooseSlot(slotNumber);        
     }
 }

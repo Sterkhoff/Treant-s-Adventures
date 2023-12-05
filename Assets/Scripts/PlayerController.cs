@@ -1,5 +1,6 @@
 using System;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
@@ -45,8 +46,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.CompareTag("Interactive"))
         {
-            if (playerInventory.ChoosenSlotNumber != null
-                && playerInventory.Items[(int)playerInventory.ChoosenSlotNumber] != string.Empty)
+            if (playerInventory.ChoosenItem != String.Empty)
                 InteractionName.text = "Использовать";
             else
                 InteractionName.text = other.GetComponent<IInteractive>().InteractionName;

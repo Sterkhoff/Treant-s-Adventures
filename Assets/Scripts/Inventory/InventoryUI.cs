@@ -13,6 +13,7 @@ public class InventoryUI : MonoBehaviour
     public void DeleteFromInventory(int slotNumber)
     {
         Destroy(Slots[slotNumber].transform.GetChild(0).gameObject);
+        Slots[slotNumber].color = Color.white;
     }
 
     public void ChooseSlot(int slotNumber)
