@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MiniGameManager : Minigame
+public class RootsMiniGame : Minigame
 {
 
     private Camera mainCamera;

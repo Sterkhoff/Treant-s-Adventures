@@ -8,7 +8,7 @@ public class LocationChangerProvider : MonoBehaviour
 
     private void Start()
     {
-        LocChanger = GameObject.Find("LocationChanger").GetComponent<LocationChanger>();
+        LocChanger = GameObject.Find("Navigator").GetComponent<LocationChanger>();
     }
     public void ChangeLocation()
     {

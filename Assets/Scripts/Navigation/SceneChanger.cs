@@ -5,7 +5,6 @@ public class SceneChanger : MonoBehaviour
 {
     private Animator anim;
     public int LevelToLoad;
-    public Vector3 NextScenePosition;
 
     private void Start()
     {
@@ -14,10 +13,10 @@ public class SceneChanger : MonoBehaviour
 
     public void FadeToLevel()
     {
-        anim.SetTrigger("Fade");
+        anim.SetTrigger("FadeToScene");
     }
 
-    public void OnFaidComplete()
+    public void OnSceneFaidComplete()
     {
         SceneManager.LoadScene(LevelToLoad);
     }

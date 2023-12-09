@@ -7,9 +7,11 @@ public class Inventory : MonoBehaviour
     public InventoryUI InventoryPanel;
     public string ChoosenItem;
     private int choosenSlotNumber;
+    private PlayerController player;
 
     private void Start()
     {
+        player = GetComponent<PlayerController>();
         choosenSlotNumber = -1;
     }
 

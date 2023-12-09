@@ -11,6 +11,7 @@ TagManager:
   - InvisibleWall
   - ChoicePanel
   - Root
+  - Ladder
   layers:
   - Default
   - TransparentFX

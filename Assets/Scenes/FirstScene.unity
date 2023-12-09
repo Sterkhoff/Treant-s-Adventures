@@ -789,7 +789,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!60 &202411076
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -857,9 +857,9 @@ Transform:
   - {fileID: 740010754}
   - {fileID: 984609818}
   - {fileID: 350174292}
-  - {fileID: 1112910655}
   - {fileID: 617374762}
   - {fileID: 2088164395}
+  - {fileID: 1112910655}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &242907862
@@ -964,6 +964,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &288416650 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6103550862624853215, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
+  m_PrefabInstance: {fileID: 4275290701128191787}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &305443972
 GameObject:
   m_ObjectHideFlags: 0
@@ -1300,7 +1305,7 @@ Transform:
   m_GameObject: {fileID: 350174290}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.3061595, y: 0.88916886, z: -9.863894}
+  m_LocalPosition: {x: 7.26616, y: 1.4391688, z: -9.863894}
   m_LocalScale: {x: -0.65, y: -0.18, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1628,6 +1633,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 418172408}
   m_CullTransparentMesh: 1
+--- !u!114 &425977418 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3130660511142427976, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
+  m_PrefabInstance: {fileID: 4275290701128191787}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &440727486
 GameObject:
   m_ObjectHideFlags: 0
@@ -2172,7 +2188,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 3.99
+  orthographic size: 4.24
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2197,7 +2213,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.400051, y: 0.69140565, z: -10}
+  m_LocalPosition: {x: 40.339878, y: -0.03633505, z: -10}
   m_LocalScale: {x: 0.9749, y: 0.9184, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2691,7 +2707,7 @@ Transform:
   m_GameObject: {fileID: 667272997}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -17.796227, y: 0.25927728, z: -9.70018}
+  m_LocalPosition: {x: 19.263773, y: 0.3192773, z: -9.70018}
   m_LocalScale: {x: -0.331875, y: 0.69031245, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2947,8 +2963,8 @@ GameObject:
   - component: {fileID: 732921284}
   - component: {fileID: 732921283}
   - component: {fileID: 732921286}
-  - component: {fileID: 732921287}
   - component: {fileID: 732921288}
+  - component: {fileID: 732921289}
   m_Layer: 0
   m_Name: FairyNPC
   m_TagString: Untagged
@@ -3090,34 +3106,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.902466, y: 11.87244}
   m_EdgeRadius: 0
---- !u!114 &732921287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 732921281}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d79d32b166b1899448ce633ff46d36f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionName: "\u041F\u043E\u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C"
-  DialogueWindow: {fileID: 242907862}
-  DialogueTextIfGameNotComplete:
-  - "\u041F\u043E\u043C\u043E\u0433\u0438\u0442\u0435!!!"
-  DialogueTextIfGameComplete:
-  - "\u0421\u043F\u0430\u0441\u0438\u0431\u043E, \u0447\u0442\u043E \u0441\u043F\u0430\u0441
-    \u043C\u0435\u043D\u044F!"
-  - "\u0412\u043E\u0437\u044C\u043C\u0438 \u043C\u0435\u043D\u044F \u0441 \u0441\u043E\u0431\u043E\u0439,
-    \u044F \u0441\u043C\u043E\u0433\u0443 \u043E\u0441\u0432\u0435\u0449\u0430\u0442\u044C
-    \u0442\u0435\u0431\u0435 \u0434\u043E\u0440\u043E\u0433\u0443!"
-  TextForChoicePanelIfGameNotComplete: "\u041F\u043E\u043C\u043E\u0447\u044C?"
-  TextForChoicePanelIfGameComplete: "\u0412\u0437\u044F\u0442\u044C \u0441\u0432\u044F\u0442\u043B\u044F\u0447\u043A\u0430
-    \u0441 \u0441\u043E\u0431\u043E\u0439?"
-  FairyFollower: {fileID: 1376187216}
-  locChanger: {fileID: 732921288}
-  Game: {fileID: 617804399}
 --- !u!114 &732921288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3132,6 +3120,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LocationToLoad: {fileID: 617804397}
   CurrentLocation: {fileID: 1481505279}
+--- !u!114 &732921289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732921281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fc32e97e15ab4e4d984846391281acf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractionName: "\u041F\u043E\u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C"
+  DialogueWindow: {fileID: 242907862}
+  DialogueStrings:
+  - "\u041F\u043E\u043C\u043E\u0433\u0438\u0442\u0435\u0435!!!"
+  DialogueStringsIfGameComplete:
+  - "\u0421\u043F\u0430\u0441\u0438\u0431\u043E, \u0447\u0442\u043E \u043F\u043E\u043C\u043E\u0433
+    \u043C\u043D\u0435!"
+  - "\u0412\u043E\u0437\u044C\u043C\u0438 \u043C\u0435\u043D\u044F \u0441 \u0441\u043E\u0431\u043E\u0439,
+    \u044F \u043F\u043E\u043C\u043E\u0433\u0443 \u0442\u0435\u0431\u0435 \u043F\u0440\u043E\u0439\u0442\u0438
+    \u0447\u0435\u0440\u0435\u0437 \u043F\u0435\u0449\u0435\u0440\u0443!"
+  TextForChoicePanelIfGameNotComplete: "\u041F\u043E\u043C\u043E\u0447\u044C?"
+  TextForChoicePanelIfGameComplete: "\u0412\u0437\u044F\u0442\u044C \u0441\u0432\u044F\u0442\u043B\u044F\u0447\u043A\u0430
+    \u0441 \u0441\u043E\u0431\u043E\u0439?"
+  locChanger: {fileID: 732921288}
+  Game: {fileID: 617804399}
+  FairyFollower: {fileID: 1376187216}
 --- !u!1 &734870648
 GameObject:
   m_ObjectHideFlags: 0
@@ -3472,7 +3488,7 @@ GameObject:
   - component: {fileID: 786394899}
   - component: {fileID: 786394900}
   m_Layer: 0
-  m_Name: Square
+  m_Name: InvisibleWall
   m_TagString: InvisibleWall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3487,8 +3503,8 @@ Transform:
   m_GameObject: {fileID: 786394898}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.0623, y: 0.467, z: 0}
-  m_LocalScale: {x: 0.5745116, y: 7.168397, z: 1}
+  m_LocalPosition: {x: -0.39, y: 0.467, z: 0}
+  m_LocalScale: {x: 0.52424186, y: 7.168397, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2088164395}
@@ -4020,6 +4036,7 @@ Transform:
   - {fileID: 1434141496}
   - {fileID: 1933347520}
   - {fileID: 747557491}
+  - {fileID: 1669462651}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &928454506
@@ -4180,8 +4197,9 @@ GameObject:
   - component: {fileID: 979774279}
   - component: {fileID: 979774277}
   - component: {fileID: 979774283}
+  - component: {fileID: 979774284}
   m_Layer: 5
-  m_Name: LocationChanger
+  m_Name: Navigator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4305,6 +4323,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LocationToLoad: {fileID: 0}
   CurrentLocation: {fileID: 0}
+--- !u!114 &979774284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979774276}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b09aad93a67d01842844c64bb78490b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelToLoad: 1
 --- !u!1 &984609815
 GameObject:
   m_ObjectHideFlags: 0
@@ -4806,7 +4837,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112910654}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5993,7 +6024,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1481505280
 Transform:
   m_ObjectHideFlags: 0
@@ -7076,10 +7107,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InteractionName: "\u0412\u043E\u0439\u0442\u0438"
-  Message: "\u042F \u043D\u0435 \u043C\u043E\u0433\u0443 \u0432\u043E\u0439\u0442\u0438,
+  Message:
+  - "\u042F \u043D\u0435 \u043C\u043E\u0433\u0443 \u0432\u043E\u0439\u0442\u0438,
     \u0441\u043B\u0438\u0448\u043A\u043E\u043C \u0442\u0435\u043C\u043D\u043E"
   PlayerDialogueWindow: {fileID: 1618507338}
   PlayerDialogue: {fileID: 1618507339}
+  Fairy: {fileID: 1376187216}
+  SceneChanger: {fileID: 979774284}
 --- !u!61 &1669462650
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7133,12 +7167,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1669462648}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 83.52, y: -2.17, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 62.44377, y: -2.2907228, z: 0.29982013}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 928454505}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1692615103
 GameObject:
@@ -7943,7 +7977,7 @@ Transform:
   m_GameObject: {fileID: 1933347519}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 21.563772, y: -0.10072273, z: -9.70018}
+  m_LocalPosition: {x: 50.573776, y: -0.8907227, z: -9.70018}
   m_LocalScale: {x: -0.331875, y: 0.69031245, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8491,8 +8525,8 @@ GameObject:
   - component: {fileID: 2088164395}
   - component: {fileID: 2088164394}
   - component: {fileID: 2088164396}
-  - component: {fileID: 2088164397}
   - component: {fileID: 2088164398}
+  - component: {fileID: 2088164399}
   m_Layer: 0
   m_Name: Big Treant
   m_TagString: Interactive
@@ -8590,27 +8624,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &2088164397
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2088164393}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7da1c9038d6cb9d4d8d4e0c3f15f115c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InteractionName: "\u041F\u043E\u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C"
-  DialogueWindow: {fileID: 1594405196}
-  DialogueStrings:
-  - "\u041F\u0440\u0438\u0432\u0435\u0442 \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u0438\u0439
-    \u0434\u0440\u0435\u0432\u0435\u043D\u044C"
-  NeededObjectName: Apple
-  DialogueTextIfQuestComplete:
-  - "\u0421\u043F\u0430\u0441\u0438\u0431\u043E \u0437\u0430 \u044F\u0431\u043B\u043E\u043A\u043E"
-  - "\u041C\u043E\u0436\u0435\u0448\u044C \u043F\u0440\u043E\u0445\u043E\u0434\u0438\u0442\u044C"
 --- !u!61 &2088164398
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8656,6 +8669,28 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 6.4, y: 6.4}
   m_EdgeRadius: 0
+--- !u!114 &2088164399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088164393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efeed55239146ac4c8d930ef06c2d132, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractionName: "\u041F\u043E\u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C"
+  DialogueWindow: {fileID: 1594405196}
+  DialogueStrings:
+  - "\u041F\u0440\u0438\u0432\u0435\u0442, \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u0438\u0439
+    \u0434\u0440\u0435\u0432\u0435\u043D\u044C"
+  NeededObjectName: Apple
+  DialogueTextIfQuestComplete:
+  - "\u0421\u043F\u0430\u0441\u0438\u0431\u043E \u0437\u0430 \u044F\u0431\u043B\u043E\u043A\u043E"
+  - "\u041C\u043E\u0436\u0435\u0448\u044C \u043F\u0440\u043E\u0445\u043E\u0434\u0438\u0442\u044C"
+  Wall: {fileID: 786394898}
 --- !u!1001 &4275290701128191787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8667,6 +8702,10 @@ PrefabInstance:
     - target: {fileID: 1147122678094640836, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 1183245135049881489, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
+      propertyPath: m_Name
+      value: InteractionButtonText
       objectReference: {fileID: 0}
     - target: {fileID: 1920531806519968806, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
       propertyPath: m_SizeDelta.x
@@ -8689,6 +8728,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 6103550862624853215, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
+      propertyPath: m_Name
+      value: InteractionButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6103550862624853215, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
@@ -8696,13 +8739,25 @@ PrefabInstance:
       propertyPath: Position
       value: 
       objectReference: {fileID: 11400000, guid: f1fabd0141560be4db7bca3841c0dadf, type: 2}
+    - target: {fileID: 7054131630775438988, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
+      propertyPath: isFaceRight
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7054131630775438988, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
+      propertyPath: InteractionButton
+      value: 
+      objectReference: {fileID: 288416650}
+    - target: {fileID: 7054131630775438988, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
+      propertyPath: InteractionButtonText
+      value: 
+      objectReference: {fileID: 425977418}
     - target: {fileID: 7059803940731278020, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.14
+      value: 40.2
       objectReference: {fileID: 0}
     - target: {fileID: 7059803940731278020, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.64
+      value: -0.58
       objectReference: {fileID: 0}
     - target: {fileID: 7059803940731278020, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8780,4 +8835,3 @@ SceneRoots:
   - {fileID: 973022312}
   - {fileID: 617804398}
   - {fileID: 979774282}
-  - {fileID: 1669462651}
