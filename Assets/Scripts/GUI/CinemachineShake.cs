@@ -1,6 +1,5 @@
 using UnityEngine;
 using Cinemachine;
-using TreeEditor;
 
 public class CinemachineShake : MonoBehaviour
 {

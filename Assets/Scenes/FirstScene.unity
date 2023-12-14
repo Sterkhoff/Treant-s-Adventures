@@ -789,7 +789,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!60 &202411076
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1141,7 +1141,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: -103943239
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!1 &343958443
 GameObject:
@@ -1305,7 +1305,7 @@ Transform:
   m_GameObject: {fileID: 350174290}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.26616, y: 1.4391688, z: -9.863894}
+  m_LocalPosition: {x: 1.9661593, y: 1.2291689, z: -9.863894}
   m_LocalScale: {x: -0.65, y: -0.18, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2188,7 +2188,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.24
+  orthographic size: 3.99
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2213,7 +2213,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 40.339878, y: -0.03633505, z: -10}
+  m_LocalPosition: {x: 98.8, y: 1.62, z: -10}
   m_LocalScale: {x: 0.9749, y: 0.9184, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4335,7 +4335,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b09aad93a67d01842844c64bb78490b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelToLoad: 1
+  LevelToLoad: 2
 --- !u!1 &984609815
 GameObject:
   m_ObjectHideFlags: 0
@@ -6024,7 +6024,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1481505280
 Transform:
   m_ObjectHideFlags: 0
@@ -6669,7 +6669,7 @@ Transform:
   m_GameObject: {fileID: 1618507338}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.12, y: 2.54, z: 0}
+  m_LocalPosition: {x: -0.99, y: 4, z: 0}
   m_LocalScale: {x: 1.2065556, y: 1.4476978, z: 0.73484}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6716,7 +6716,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -103943239
   m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 4b108154c8ff9014786443afc2994ef7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -7977,7 +7977,7 @@ Transform:
   m_GameObject: {fileID: 1933347519}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 50.573776, y: -0.8907227, z: -9.70018}
+  m_LocalPosition: {x: 56.163773, y: 0.79927725, z: -9.70018}
   m_LocalScale: {x: -0.331875, y: 0.69031245, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8427,7 +8427,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -417.9, y: -234.22}
+  m_AnchoredPosition: {x: -418.13, y: -234.25}
   m_SizeDelta: {x: 390.5559, y: 163.575}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2080730108
@@ -8678,19 +8678,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 2088164393}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efeed55239146ac4c8d930ef06c2d132, type: 3}
+  m_Script: {fileID: 11500000, guid: 7da1c9038d6cb9d4d8d4e0c3f15f115c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   InteractionName: "\u041F\u043E\u0433\u043E\u0432\u043E\u0440\u0438\u0442\u044C"
   DialogueWindow: {fileID: 1594405196}
   DialogueStrings:
   - "\u041F\u0440\u0438\u0432\u0435\u0442, \u043C\u0430\u043B\u0435\u043D\u044C\u043A\u0438\u0439
-    \u0434\u0440\u0435\u0432\u0435\u043D\u044C"
+    \u0434\u0440\u0432\u0435\u043D\u044C"
   NeededObjectName: Apple
   DialogueTextIfQuestComplete:
-  - "\u0421\u043F\u0430\u0441\u0438\u0431\u043E \u0437\u0430 \u044F\u0431\u043B\u043E\u043A\u043E"
-  - "\u041C\u043E\u0436\u0435\u0448\u044C \u043F\u0440\u043E\u0445\u043E\u0434\u0438\u0442\u044C"
-  Wall: {fileID: 786394898}
+  - "\u0421\u043F\u0430\u0441\u0438\u0431\u043E \u0437\u0430 \u044F\u0431\u043B"
+  EventIfQuestComplete:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1001 &4275290701128191787
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8709,23 +8710,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1920531806519968806, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 3.7494
+      value: 2.6243
       objectReference: {fileID: 0}
     - target: {fileID: 1920531806519968806, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 1.0096
+      value: 0.7026
       objectReference: {fileID: 0}
     - target: {fileID: 1920531806519968806, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -956.69
+      value: -956.72
       objectReference: {fileID: 0}
     - target: {fileID: 1920531806519968806, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -539.24
+      value: -539.3935
       objectReference: {fileID: 0}
     - target: {fileID: 3130660511142427976, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
       propertyPath: m_text
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130660511142427976, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
+      propertyPath: m_fontSize
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3130660511142427976, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6103550862624853215, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
       propertyPath: m_Name
@@ -8753,11 +8762,11 @@ PrefabInstance:
       objectReference: {fileID: 425977418}
     - target: {fileID: 7059803940731278020, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 40.2
+      value: 3.8
       objectReference: {fileID: 0}
     - target: {fileID: 7059803940731278020, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.58
+      value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: 7059803940731278020, guid: a84a1073986857c4da8213a37f1c491b, type: 3}
       propertyPath: m_LocalPosition.z

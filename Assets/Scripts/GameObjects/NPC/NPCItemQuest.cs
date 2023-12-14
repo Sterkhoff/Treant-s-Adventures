@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class NPCItemQuest : NPC
 {
     public string NeededObjectName;
     public string[] DialogueTextIfQuestComplete;
+    public UnityEvent EventIfQuestComplete;
     protected Inventory playerInventory;
 
     protected override void Start()
@@ -24,6 +26,7 @@ public class NPCItemQuest : NPC
         {
             playerInventory.DeleteChoosenFromInventory();
             NPCDialogue.ChangeDialogLines(DialogueTextIfQuestComplete);
+            EventIfQuestComplete.Invoke();
         }
     }
 

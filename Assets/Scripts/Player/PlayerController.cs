@@ -21,7 +21,6 @@ public class PlayerController : MonoBehaviour
     {
         InteractionButton = transform.Find("InteractionButton").gameObject;
         boxCollider = GetComponent<BoxCollider2D>();
-        OnInteractionButtonPressed += () => InteractionButton.SetActive(false);
         playerInventory = GetComponent<Inventory>();
     }
 
