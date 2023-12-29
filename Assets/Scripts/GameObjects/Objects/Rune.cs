@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Rune : MonoBehaviour
 {
-    private string color;
+    public string color;
     private Animator anim;
 
     public void SwitchColor()

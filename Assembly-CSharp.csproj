@@ -69,6 +69,7 @@
     <Compile Include="Assets\Scripts\GameObjects\Objects\Item.cs" />
     <Compile Include="Assets\Scripts\Navigation\LocationSwitch.cs" />
     <Compile Include="Assets\Scripts\Navigation\Exiter.cs" />
+    <Compile Include="Assets\Scripts\MiniGames\RunesQuest.cs" />
     <Compile Include="Assets\Scripts\GUI\ChoicePanel.cs" />
     <Compile Include="Assets\Scripts\GameObjects\Objects\LocationEnter.cs" />
     <Compile Include="Assets\Scripts\GameObjects\Objects\RuneButton.cs" />
