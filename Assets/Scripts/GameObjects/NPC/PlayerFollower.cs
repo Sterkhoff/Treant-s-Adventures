@@ -13,10 +13,7 @@ public class PlayerFollower : MonoBehaviour
 
     private void Update()
     {
-        if (player.isFaceRight && !isFaceRight)
-            isFaceRight = true;
-        if (!player.isFaceRight && isFaceRight)
-            isFaceRight = false;
+        isFaceRight = player.isFaceRight;
         sr.flipX = isFaceRight;
     }
 }

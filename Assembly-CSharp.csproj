@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\GameObjects\Objects\ObjectCreator.cs" />
     <Compile Include="Assets\Scripts\GameObjects\NPC\PlayerFollower.cs" />
     <Compile Include="Assets\Scripts\GUI\InventoryUI.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Objects\Cave.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerController.cs" />
     <Compile Include="Assets\Scripts\Player\Inventory.cs" />
     <Compile Include="Assets\Scripts\Navigation\LocationChangerProvider.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Assets\Scripts\MiniGames\RunesQuest.cs" />
     <Compile Include="Assets\Scripts\GUI\ChoicePanel.cs" />
     <Compile Include="Assets\Scripts\GameObjects\Objects\LocationEnter.cs" />
+    <Compile Include="Assets\Scripts\GameObjects\Objects\Door.cs" />
     <Compile Include="Assets\Scripts\GameObjects\Objects\RuneButton.cs" />
     <Compile Include="Assets\Scripts\GameObjects\NPC\FairyMiniGameNPC.cs" />
     <Compile Include="Assets\Scripts\Navigation\SceneChanger.cs" />

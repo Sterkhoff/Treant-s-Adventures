@@ -16,18 +16,20 @@ public class PlayerController : MonoBehaviour
     private Inventory playerInventory;
     private BoxCollider2D boxCollider;
     private string currentColliderActionName;
-
+    private SceneChanger sc;
     private void Start()
     {
         InteractionButton = transform.Find("InteractionButton").gameObject;
         boxCollider = GetComponent<BoxCollider2D>();
         playerInventory = GetComponent<Inventory>();
+        sc = GameObject.Find("Navigator").GetComponent<SceneChanger>();
     }
 
 
     private void Update()
     {
         UpdateInteractionButton();
+        UpdateEsc();
     }
 
     private void FixedUpdate()
@@ -146,13 +148,10 @@ public class PlayerController : MonoBehaviour
     private void UpdateHorizontalMovement()
     {
         rb.velocity = new Vector2(Input.GetAxis("Horizontal") * Speed, rb.velocity.y);
-        if (isFaceRight && Input.GetAxis("Horizontal") < 0)
+        float axis = Input.GetAxis("Horizontal");
+        if(axis != 0)
         {
-            isFaceRight = false;
-        }
-        if (!isFaceRight && Input.GetAxis("Horizontal") > 0)
-        {
-            isFaceRight = true;
+            isFaceRight = axis > 0;
         }
         sr.flipX = !isFaceRight;
     }
@@ -162,9 +161,15 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("player_is_walk", rb.velocity.x != 0);
     }
 
+    private void UpdateEsc()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+            sc.FadeToLevel(0);
+    }
+
     private void UpdateInteractionButton()
     {
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && OnInteractionButtonPressed != null)
             OnInteractionButtonPressed.Invoke();
         if (InteractionButton.activeSelf)
         {

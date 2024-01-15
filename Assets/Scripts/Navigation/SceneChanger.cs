@@ -4,15 +4,16 @@ using UnityEngine.SceneManagement;
 public class SceneChanger : MonoBehaviour
 {
     private Animator anim;
-    public int LevelToLoad;
+    private int LevelToLoad;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
     }
 
-    public void FadeToLevel()
+    public void FadeToLevel(int sceneNumber)
     {
+        LevelToLoad = sceneNumber;
         anim.SetTrigger("FadeToScene");
     }
 
